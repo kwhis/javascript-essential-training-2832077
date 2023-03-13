@@ -1,6 +1,6 @@
 /**
  * Challenge: Create a new object type
- * 
+ *
  * - Create a new object type "Book" using a class or an object constructor function.
  * - Add at least 5 book objects.
  */

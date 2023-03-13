@@ -77,4 +77,4 @@ const usedStatus = () => {
   `);
 };
 
-usedStatus()
+usedStatus();
