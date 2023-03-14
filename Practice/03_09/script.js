@@ -23,4 +23,27 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  changeName: function (newName) {
+    this.name = newName;
+  },
+  changeVolume: function (newVolume) {
+    this.volume = newVolume;
+  },
+  changeColor: function (newColor) {
+    this.color = newColor;
+  },
+  changePocketNum: function (newPocketNum) {
+    this.pocketNum = newPocketNum;
+  },
 };
+
+console.log("Backpack before:", backpack);
+
+backpack.changeName("Ultra Backpack");
+backpack.changeVolume(50);
+backpack.changeColor("green");
+backpack.changePocketNum(20);
+backpack.newStrapLength(30, 30);
+backpack.toggleLid(false);
+
+console.log("Backpack after:", backpack);
