@@ -8,7 +8,7 @@
  */
 import Pet from "./Pet.js";
 
-const cat = new Pet(
+const cat1 = new Pet(
   "cat",
   "Domestic Long Hair",
   "Small Fry",
@@ -19,7 +19,18 @@ const cat = new Pet(
   true
 );
 
-const dog = new Pet(
+const cat2 = new Pet(
+  "cat",
+  "Long Hair Calico",
+  "Stella",
+  6,
+  "black/brown",
+  "yellow",
+  false,
+  true
+);
+
+const dog1 = new Pet(
   "dog",
   "Pom-chi",
   "Kobi",
@@ -30,16 +41,11 @@ const dog = new Pet(
   false
 );
 
-console.log("Cat object from Pet class:", cat);
-console.log("Dog object from Pet class", dog);
-console.log("Are they hungry?", cat.hungry, " or thirsty?", cat.thirsty);
-console.log("Are they hungry?", dog.hungry, " or thirsty?", dog.thirsty);
+console.log("Pet 1:", cat1);
+console.log("Pet 2:", cat2);
+console.log("Pet 3:", dog1);
 
 console.log("Take care of the pets..");
-dog.takeCare(true, false);
-cat.takeCare(true, true);
-
-console.log("Cat after:", cat);
-console.log("Dog after", dog);
-console.log("Are they hungry?", cat.hungry, " or thirsty?", cat.thirsty);
-console.log("Are they hungry?", dog.hungry, " or thirsty?", dog.thirsty);
+cat1.takeCare(true, true);
+cat2.takeCare(true, false);
+dog1.takeCare(true, false);
