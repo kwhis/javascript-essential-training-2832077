@@ -44,7 +44,3 @@ console.log("Fourth Book:", book4);
 console.log("Years Since Published:", book4.calcAge());
 console.log("Fifth Book:", book5);
 console.log("Years Since Published:", book5.calcAge());
-console.log("Book 4:");
-
-book4.updateReadStatus(true);
-console.log(book4);
